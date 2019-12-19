@@ -1,0 +1,58 @@
+{
+    "name": "DataAtWork",
+    "description": "ta at Work is about enabling an open 21st century workforce data ecosystem to power 21st century workforce data. We are doing this by developing datasets, tools, standards, and best practices for publishing data on skills, jobs, and training. The heart of Data at Work is the Open Skills Project, an dynamic national taxonomy of skills and jobs built on data from a large set of public and private data contributors.",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/Screen Shot 2016-10-12 at 11.19.25 PM.png",
+    "tags": [
+        "api service provider",
+        "careers",
+        "data standards",
+        "general data",
+        "have api",
+        "have swagger",
+        "profile",
+        "skills"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/dataatwork\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Open Skills API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/Screen Shot 2016-10-12 at 11.19.25 PM.png",
+            "humanURL": "http:\/\/www.dataatwork.org\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/open-skills-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/open-skills-api.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Developers",
+            "url": "http:\/\/api.dataatwork.org\/v1\/spec\/"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/22987-2019-09-03-20-17-26.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/22987-2019-09-03-20-17-35.json"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/www.dataatwork.org\/"
+        }
+    ]
+}
