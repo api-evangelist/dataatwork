@@ -1,0 +1,514 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "1.0",
+        "title": "Open Skills API",
+        "description": "A complete and standard data store for canonical and emerging skills, knowledge, abilities, tools, technolgies, and how they relate to jobs.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "api.dataatwork.org\/v1"
+    ],
+    "paths": {
+        "\/jobs": {
+            "get": {
+                "summary": "Job Titles and Descriptions",
+                "description": "Retrieves the names, descriptions, and UUIDs of all job titles.",
+                "operationId": "RetrievesTheNamesDescriptionsAndUuidsOfAllJobTitles",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Pagination offset. Default is 0."
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Maximum number of items per page. Default is 20 and cannot exceed 500."
+                    }
+                ]
+            }
+        },
+        "\/jobs\/{id}": {
+            "get": {
+                "summary": "Job Title and Description",
+                "description": "Retrieves the name, description, and UUID of a job by specifying its O*NET SOC Code or UUID.",
+                "operationId": "RetrievesTheNameDescriptionAndUuidOfAJobBySpecifyingItsOnetSocCodeOrUuid",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The O*NET SOC Code or UUID of the job title to retrieve"
+                    }
+                ]
+            }
+        },
+        "\/jobs\/{id}\/related_skills": {
+            "get": {
+                "summary": "Skills Associated with a Job",
+                "description": "Retrieves a collection of skills associated with a specified job.",
+                "operationId": "RetrievesACollectionOfSkillsAssociatedWithASpecifiedJob",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The O*NET SOC Code or UUID of the job title to retrieve"
+                    }
+                ]
+            }
+        },
+        "\/jobs\/{id}\/related_jobs": {
+            "get": {
+                "summary": "Jobs Associated with a Job",
+                "description": "Retrieves a collection of jobs associated with a specified job.",
+                "operationId": "RetrievesACollectionOfJobsAssociatedWithASpecifiedJob",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The O*NET SOC Code or UUID of the job title to retrieve"
+                    }
+                ]
+            }
+        },
+        "\/jobs\/autocomplete": {
+            "get": {
+                "summary": "Job Title Autocomplete",
+                "description": "Retrieves the names, descriptions, and UUIDs of all job titles matching a given search criteria.",
+                "operationId": "RetrievesTheNamesDescriptionsAndUuidsOfAllJobTitlesMatchingAGivenSearchCriteria",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "begins_with",
+                        "in": "query",
+                        "description": "Find job titles beginning with the given text fragment"
+                    },
+                    {
+                        "name": "contains",
+                        "in": "query",
+                        "description": "Find job titles containing the given text fragment"
+                    },
+                    {
+                        "name": "ends_with",
+                        "in": "query",
+                        "description": "Find job titles ending with the given text fragment"
+                    }
+                ]
+            }
+        },
+        "\/jobs\/normalize": {
+            "get": {
+                "summary": "Job Title Normalization",
+                "description": "Retrieves the canonical job title for a synonymous job title",
+                "operationId": "RetrievesTheCanonicalJobTitleForASynonymousJobTitle",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "job_title",
+                        "in": "query",
+                        "description": "Find the canonical job title(s) for jobs matching the given text fragment"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Maximum number of items per page. Default is 20 and cannot exceed 500."
+                    }
+                ]
+            }
+        },
+        "\/jobs\/unusual_titles": {
+            "get": {
+                "summary": "Unusual Job Titles",
+                "description": "Retrieves a list of unusual job titles and the UUIDs of their canonical jobs.",
+                "operationId": "RetrievesAListOfUnusualJobTitlesAndTheUuidsOfTheirCanonicalJobs",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/skills": {
+            "get": {
+                "summary": "Skill Names and Descriptions",
+                "description": "Retrieve the names, descriptions, and UUIDs of all skills.",
+                "operationId": "RetrieveTheNamesDescriptionsAndUuidsOfAllSkills",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Pagination offset. Default is 0."
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Maximum number of items per page. Default is 20 and cannot exceed 500."
+                    }
+                ]
+            }
+        },
+        "\/skills\/{id}": {
+            "get": {
+                "summary": "Skill Name and Description",
+                "description": "Retrieves the name, description, and UUID of a job by specifying its UUID.",
+                "operationId": "RetrievesTheNameDescriptionAndUuidOfAJobBySpecifyingItsUuid",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The O*NET SOC Code or UUID of the job title to retrieve"
+                    }
+                ]
+            }
+        },
+        "\/skills\/{id}\/related_jobs": {
+            "get": {
+                "summary": "Jobs Associated with a Skill",
+                "description": "Retrieves a collection of jobs associated with a specified skill.",
+                "operationId": "RetrievesACollectionOfJobsAssociatedWithASpecifiedSkill",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The O*NET SOC Code or UUID of the job title to retrieve"
+                    }
+                ]
+            }
+        },
+        "\/skills\/{id}\/related_skills": {
+            "get": {
+                "summary": "Skills Associated with a Skill",
+                "description": "Retrieves a collection of skills associated with a specified skill.",
+                "operationId": "RetrievesACollectionOfSkillsAssociatedWithASpecifiedSkill",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The O*NET SOC Code or UUID of the job title to retrieve"
+                    }
+                ]
+            }
+        },
+        "\/skills\/autocomplete": {
+            "get": {
+                "summary": "Skill Name Autocomplete",
+                "description": "Retrieves the names, descriptions, and UUIDs of all skills matching a given search criteria.",
+                "operationId": "RetrievesTheNamesDescriptionsAndUuidsOfAllSkillsMatchingAGivenSearchCriteria",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "begins_with",
+                        "in": "query",
+                        "description": "Find job titles beginning with the given text fragment"
+                    },
+                    {
+                        "name": "contains",
+                        "in": "query",
+                        "description": "Find job titles containing the given text fragment"
+                    },
+                    {
+                        "name": "ends_with",
+                        "in": "query",
+                        "description": "Find job titles ending with the given text fragment"
+                    }
+                ]
+            }
+        },
+        "\/skills\/normalize": {
+            "get": {
+                "summary": "Skill Name Normalization",
+                "description": "Retrieves the canonical skill name for a synonymous skill name",
+                "operationId": "RetrievesTheCanonicalSkillNameForASynonymousSkillName",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "skill_name",
+                        "in": "query",
+                        "description": "Find the canonical skill name(s) for skills matching the given text fragment"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Jobs": {
+                "type": "object",
+                "properties": {
+                    "links": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "Job": {
+                "type": "object",
+                "properties": {
+                    "uuid": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "normalized_job_title": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "parent_uuid": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "JobSkills": {
+                "type": "object",
+                "properties": {
+                    "job_uuid": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "job_title": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "normalized_job_title": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "skills": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "NormalizedJob": {
+                "type": "object",
+                "properties": {
+                    "uuid": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "relevance_score": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "parent_uuid": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "JobSkill": {
+                "type": "object",
+                "properties": {
+                    "job_uuid": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "job_title": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "normalized_job_title": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "importance": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "level": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "JobRelatedJobs": {
+                "type": "object",
+                "properties": {
+                    "uuid": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "related_job_titles": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "JobRelatedJob": {
+                "type": "object",
+                "properties": {
+                    "uuid": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "parent_uuid": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "Skills": {
+                "type": "object",
+                "properties": {
+                    "links": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "Skill": {
+                "type": "object",
+                "properties": {
+                    "uuid": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "onet_element_id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "normalized_skill_name": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "NormalizedSkill": {
+                "type": "object",
+                "properties": {
+                    "uuid": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "skill_name": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "SkillJobs": {
+                "type": "object",
+                "properties": {
+                    "skill_uuid": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "skill_name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "normalized_job_title": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "jobs": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "SkillJob": {
+                "type": "object",
+                "properties": {
+                    "skill_uuid": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "skill_name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "normalized_skill_name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "importance": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "level": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "SkillRelatedSkills": {
+                "type": "object",
+                "properties": {
+                    "uuid": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "related_skill_name": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "SkillRelatedSkill": {
+                "type": "object",
+                "properties": {
+                    "uuid": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "skill_name": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "PageLink": {
+                "type": "object",
+                "properties": {
+                    "rel": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "href": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "Error": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "message": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}
