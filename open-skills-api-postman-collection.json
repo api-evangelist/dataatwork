@@ -1,0 +1,457 @@
+{
+    "id": "defe12d90615394d6b145b8a8bd60055",
+    "name": "Open Skills API",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "c62002c85e45f4ff6e44113af4323c9f",
+            "name": "Job Titles and Descriptions",
+            "url": "api.dataatwork.org\/v1\/jobs",
+            "description": "Retrieves the names, descriptions, and UUIDs of all job titles.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "offset",
+                    "description": "Pagination offset. Default is 0.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Maximum number of items per page. Default is 20 and cannot exceed 500.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "defe12d90615394d6b145b8a8bd60055",
+            "rawModeData": ""
+        },
+        {
+            "id": "d44229323143c41f48768b253d88b4e4",
+            "name": "Job Title and Description",
+            "url": "api.dataatwork.org\/v1\/jobs\/{id}",
+            "description": "Retrieves the name, description, and UUID of a job by specifying its O*NET SOC Code or UUID.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The O*NET SOC Code or UUID of the job title to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "defe12d90615394d6b145b8a8bd60055",
+            "rawModeData": ""
+        },
+        {
+            "id": "f964888e8dddd19e9a5b1a7f054d040e",
+            "name": "Skills Associated with a Job",
+            "url": "api.dataatwork.org\/v1\/jobs\/{id}\/related_skills",
+            "description": "Retrieves a collection of skills associated with a specified job.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The O*NET SOC Code or UUID of the job title to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "defe12d90615394d6b145b8a8bd60055",
+            "rawModeData": ""
+        },
+        {
+            "id": "0d0e70d1769e33ba91c0a8dd5a50384b",
+            "name": "Jobs Associated with a Job",
+            "url": "api.dataatwork.org\/v1\/jobs\/{id}\/related_jobs",
+            "description": "Retrieves a collection of jobs associated with a specified job.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The O*NET SOC Code or UUID of the job title to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "defe12d90615394d6b145b8a8bd60055",
+            "rawModeData": ""
+        },
+        {
+            "id": "1790ad6d5e467416725a007cce847836",
+            "name": "Job Title Autocomplete",
+            "url": "api.dataatwork.org\/v1\/jobs\/autocomplete",
+            "description": "Retrieves the names, descriptions, and UUIDs of all job titles matching a given search criteria.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "begins_with",
+                    "description": "Find job titles beginning with the given text fragment",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "contains",
+                    "description": "Find job titles containing the given text fragment",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ends_with",
+                    "description": "Find job titles ending with the given text fragment",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "defe12d90615394d6b145b8a8bd60055",
+            "rawModeData": ""
+        },
+        {
+            "id": "473a761daf1a4be47f0da360b1238bd3",
+            "name": "Job Title Normalization",
+            "url": "api.dataatwork.org\/v1\/jobs\/normalize",
+            "description": "Retrieves the canonical job title for a synonymous job title",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "job_title",
+                    "description": "Find the canonical job title(s) for jobs matching the given text fragment",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Maximum number of items per page. Default is 20 and cannot exceed 500.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "defe12d90615394d6b145b8a8bd60055",
+            "rawModeData": ""
+        },
+        {
+            "id": "231ec91713012fe33ccdc93e902e640d",
+            "name": "Unusual Job Titles",
+            "url": "api.dataatwork.org\/v1\/jobs\/unusual_titles",
+            "description": "Retrieves a list of unusual job titles and the UUIDs of their canonical jobs.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "defe12d90615394d6b145b8a8bd60055",
+            "rawModeData": ""
+        },
+        {
+            "id": "a667a323443d4155cbd67dee08a169ec",
+            "name": "Skill Names and Descriptions",
+            "url": "api.dataatwork.org\/v1\/skills",
+            "description": "Retrieve the names, descriptions, and UUIDs of all skills.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "offset",
+                    "description": "Pagination offset. Default is 0.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Maximum number of items per page. Default is 20 and cannot exceed 500.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "defe12d90615394d6b145b8a8bd60055",
+            "rawModeData": ""
+        },
+        {
+            "id": "ac0b9f43b58d1bf49a9e0cb63cfaa39e",
+            "name": "Skill Name and Description",
+            "url": "api.dataatwork.org\/v1\/skills\/{id}",
+            "description": "Retrieves the name, description, and UUID of a job by specifying its UUID.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The O*NET SOC Code or UUID of the job title to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "defe12d90615394d6b145b8a8bd60055",
+            "rawModeData": ""
+        },
+        {
+            "id": "da62b50e8876301b0a632c1083b785e8",
+            "name": "Jobs Associated with a Skill",
+            "url": "api.dataatwork.org\/v1\/skills\/{id}\/related_jobs",
+            "description": "Retrieves a collection of jobs associated with a specified skill.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The O*NET SOC Code or UUID of the job title to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "defe12d90615394d6b145b8a8bd60055",
+            "rawModeData": ""
+        },
+        {
+            "id": "db73f55c24185b7ac1dcfbf115c287f9",
+            "name": "Skills Associated with a Skill",
+            "url": "api.dataatwork.org\/v1\/skills\/{id}\/related_skills",
+            "description": "Retrieves a collection of skills associated with a specified skill.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The O*NET SOC Code or UUID of the job title to retrieve",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "defe12d90615394d6b145b8a8bd60055",
+            "rawModeData": ""
+        },
+        {
+            "id": "3079b533aeda004d5d3830d3b45bdc9a",
+            "name": "Skill Name Autocomplete",
+            "url": "api.dataatwork.org\/v1\/skills\/autocomplete",
+            "description": "Retrieves the names, descriptions, and UUIDs of all skills matching a given search criteria.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "begins_with",
+                    "description": "Find job titles beginning with the given text fragment",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "contains",
+                    "description": "Find job titles containing the given text fragment",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "ends_with",
+                    "description": "Find job titles ending with the given text fragment",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "defe12d90615394d6b145b8a8bd60055",
+            "rawModeData": ""
+        },
+        {
+            "id": "0c940fe270e9b35b29eab13ce9796ef1",
+            "name": "Skill Name Normalization",
+            "url": "api.dataatwork.org\/v1\/skills\/normalize",
+            "description": "Retrieves the canonical skill name for a synonymous skill name",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "skill_name",
+                    "description": "Find the canonical skill name(s) for skills matching the given text fragment",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "defe12d90615394d6b145b8a8bd60055",
+            "rawModeData": ""
+        }
+    ]
+}
