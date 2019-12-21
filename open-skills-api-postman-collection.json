@@ -1,5 +1,5 @@
 {
-    "id": "defe12d90615394d6b145b8a8bd60055",
+    "id": "2e72dce5d45f2e65b5fbb8037451447e",
     "name": "Open Skills API",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "c62002c85e45f4ff6e44113af4323c9f",
+            "id": "25dae0cdd3c4007ed65b74fd5c7b36c4",
             "name": "Job Titles and Descriptions",
             "url": "api.dataatwork.org\/v1\/jobs",
             "description": "Retrieves the names, descriptions, and UUIDs of all job titles.",
@@ -44,11 +44,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "defe12d90615394d6b145b8a8bd60055",
+            "collectionId": "2e72dce5d45f2e65b5fbb8037451447e",
             "rawModeData": ""
         },
         {
-            "id": "d44229323143c41f48768b253d88b4e4",
+            "id": "26c02f76a87403b9d7072d9966ecb129",
             "name": "Job Title and Description",
             "url": "api.dataatwork.org\/v1\/jobs\/{id}",
             "description": "Retrieves the name, description, and UUID of a job by specifying its O*NET SOC Code or UUID.",
@@ -75,11 +75,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "defe12d90615394d6b145b8a8bd60055",
+            "collectionId": "2e72dce5d45f2e65b5fbb8037451447e",
             "rawModeData": ""
         },
         {
-            "id": "f964888e8dddd19e9a5b1a7f054d040e",
+            "id": "d9c29dd5c9762c9eaa9e7e2d20323f19",
             "name": "Skills Associated with a Job",
             "url": "api.dataatwork.org\/v1\/jobs\/{id}\/related_skills",
             "description": "Retrieves a collection of skills associated with a specified job.",
@@ -106,11 +106,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "defe12d90615394d6b145b8a8bd60055",
+            "collectionId": "2e72dce5d45f2e65b5fbb8037451447e",
             "rawModeData": ""
         },
         {
-            "id": "0d0e70d1769e33ba91c0a8dd5a50384b",
+            "id": "c9baac56a510ac6a54cec044991f1a56",
             "name": "Jobs Associated with a Job",
             "url": "api.dataatwork.org\/v1\/jobs\/{id}\/related_jobs",
             "description": "Retrieves a collection of jobs associated with a specified job.",
@@ -137,11 +137,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "defe12d90615394d6b145b8a8bd60055",
+            "collectionId": "2e72dce5d45f2e65b5fbb8037451447e",
             "rawModeData": ""
         },
         {
-            "id": "1790ad6d5e467416725a007cce847836",
+            "id": "18c83ebf6fe1d59ee03fc7e6f5a56aa3",
             "name": "Job Title Autocomplete",
             "url": "api.dataatwork.org\/v1\/jobs\/autocomplete",
             "description": "Retrieves the names, descriptions, and UUIDs of all job titles matching a given search criteria.",
@@ -182,11 +182,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "defe12d90615394d6b145b8a8bd60055",
+            "collectionId": "2e72dce5d45f2e65b5fbb8037451447e",
             "rawModeData": ""
         },
         {
-            "id": "473a761daf1a4be47f0da360b1238bd3",
+            "id": "41278f9dd496c4ae7d2fde51c6e3c96b",
             "name": "Job Title Normalization",
             "url": "api.dataatwork.org\/v1\/jobs\/normalize",
             "description": "Retrieves the canonical job title for a synonymous job title",
@@ -220,11 +220,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "defe12d90615394d6b145b8a8bd60055",
+            "collectionId": "2e72dce5d45f2e65b5fbb8037451447e",
             "rawModeData": ""
         },
         {
-            "id": "231ec91713012fe33ccdc93e902e640d",
+            "id": "0be513d96b684914f8c8015a5c7cf6ba",
             "name": "Unusual Job Titles",
             "url": "api.dataatwork.org\/v1\/jobs\/unusual_titles",
             "description": "Retrieves a list of unusual job titles and the UUIDs of their canonical jobs.",
@@ -243,11 +243,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "defe12d90615394d6b145b8a8bd60055",
+            "collectionId": "2e72dce5d45f2e65b5fbb8037451447e",
             "rawModeData": ""
         },
         {
-            "id": "a667a323443d4155cbd67dee08a169ec",
+            "id": "199f0073e9a17000ef0604ddf7c3131f",
             "name": "Skill Names and Descriptions",
             "url": "api.dataatwork.org\/v1\/skills",
             "description": "Retrieve the names, descriptions, and UUIDs of all skills.",
@@ -281,11 +281,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "defe12d90615394d6b145b8a8bd60055",
+            "collectionId": "2e72dce5d45f2e65b5fbb8037451447e",
             "rawModeData": ""
         },
         {
-            "id": "ac0b9f43b58d1bf49a9e0cb63cfaa39e",
+            "id": "5b26f2bda29f953b5156378bdfb06c37",
             "name": "Skill Name and Description",
             "url": "api.dataatwork.org\/v1\/skills\/{id}",
             "description": "Retrieves the name, description, and UUID of a job by specifying its UUID.",
@@ -312,11 +312,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "defe12d90615394d6b145b8a8bd60055",
+            "collectionId": "2e72dce5d45f2e65b5fbb8037451447e",
             "rawModeData": ""
         },
         {
-            "id": "da62b50e8876301b0a632c1083b785e8",
+            "id": "c7937daf38f061cdd1ff8925e59864a7",
             "name": "Jobs Associated with a Skill",
             "url": "api.dataatwork.org\/v1\/skills\/{id}\/related_jobs",
             "description": "Retrieves a collection of jobs associated with a specified skill.",
@@ -343,11 +343,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "defe12d90615394d6b145b8a8bd60055",
+            "collectionId": "2e72dce5d45f2e65b5fbb8037451447e",
             "rawModeData": ""
         },
         {
-            "id": "db73f55c24185b7ac1dcfbf115c287f9",
+            "id": "3c6b95668c90fe1448f6597f5599cc0b",
             "name": "Skills Associated with a Skill",
             "url": "api.dataatwork.org\/v1\/skills\/{id}\/related_skills",
             "description": "Retrieves a collection of skills associated with a specified skill.",
@@ -374,11 +374,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "defe12d90615394d6b145b8a8bd60055",
+            "collectionId": "2e72dce5d45f2e65b5fbb8037451447e",
             "rawModeData": ""
         },
         {
-            "id": "3079b533aeda004d5d3830d3b45bdc9a",
+            "id": "623fea8132b80f8afe6061887fb7fc75",
             "name": "Skill Name Autocomplete",
             "url": "api.dataatwork.org\/v1\/skills\/autocomplete",
             "description": "Retrieves the names, descriptions, and UUIDs of all skills matching a given search criteria.",
@@ -419,11 +419,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "defe12d90615394d6b145b8a8bd60055",
+            "collectionId": "2e72dce5d45f2e65b5fbb8037451447e",
             "rawModeData": ""
         },
         {
-            "id": "0c940fe270e9b35b29eab13ce9796ef1",
+            "id": "7819e6eba2d285b64cdfe36c56dec2ab",
             "name": "Skill Name Normalization",
             "url": "api.dataatwork.org\/v1\/skills\/normalize",
             "description": "Retrieves the canonical skill name for a synonymous skill name",
@@ -450,7 +450,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "defe12d90615394d6b145b8a8bd60055",
+            "collectionId": "2e72dce5d45f2e65b5fbb8037451447e",
             "rawModeData": ""
         }
     ]
